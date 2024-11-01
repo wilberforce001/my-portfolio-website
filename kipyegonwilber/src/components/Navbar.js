@@ -7,7 +7,7 @@ const NavigationBar = () => (
     <Navbar.Brand href="#home"></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-      <Nav className="ml-auto">
+      <Nav className="ml-auto text-center">
         <Nav.Link href="#about">About</Nav.Link>
         <Nav.Link href="#skills">Skills</Nav.Link>
         <Nav.Link href="#projects">Projects</Nav.Link>
