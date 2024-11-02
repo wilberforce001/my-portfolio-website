@@ -20,9 +20,13 @@ const HomePage = () => {
                 </p>
 
                 <div className="button-container d-flex justify-content-center align-items-center">
-                <Button variant="primary" className="d-flex align-items-center">
+                <Button variant="purple" className="btn-purple rotating-border d-flex align-items-center">
+                    <div className="view-work">
                     View My Work
-                    <img src={cursorIcon} alt="Cursor Icon" style={{ marginLeft: '15px' }} width="20" height="20" />
+                    </div>
+                    <span className="icon-wrapper" style={{ marginLeft: '15px' }}>
+                        <img src={cursorIcon} alt="Cursor Icon" className="cursor-icon" />
+                    </span>
                 </Button>
                 </div>
             </div>
