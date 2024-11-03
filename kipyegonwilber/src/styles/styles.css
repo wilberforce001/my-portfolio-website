@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .navbar-custom {
   transition: background-color 0.3s ease, top 0.3s ease;
@@ -70,10 +76,10 @@ html {
   width: 100%;
   height: 100%;
   background-image: 
-  linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-  linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+  linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 30px 30px; /* Size of the squares */
-  z-index: 1;
+  z-index: 1; 
 }
 
 .home h1,
@@ -101,7 +107,6 @@ html {
   position: relative;
   background-color: #15072e;
   border-color: #6f42c1;
-  /* border: 2px solid transparent; */
   color: white;
   padding: 0.2rem 2rem;
   overflow: hidden;
@@ -114,20 +119,209 @@ html {
   border-color: #5a3eab;
 }
 
-/* .btn-purple::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background: linear-gradient(90deg, #ff7f50, #ff6347, #6a0dad, #ff6347);
-  z-index: -1;
-  border-radius: 12px;
-  animation: border-spin 4s linear infinite;
+.about-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #000; /* Base color */
 }
 
-@keyframes border-spin {
-  0% { transform: rotate(0deg);}
-  100% { transform: rotate(360deg); }
-} */
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom:0.5rem;
+  color: #ffffff;
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  flex: 1 1 250px;
+  color: #ccc;
+  background-image: 
+  linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+  linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 30px 30px; /* Size of the squares */
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #999;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align cards */
+  }
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  margin: 2rem auto;
+  gap: 1rem;
+  background-color: rgb(41, 38, 38);
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.button-section button {
+  /* flex: none; */
+  /* margin: 0 5rem; */
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+.professional-journey {
+  /* background-image: 
+  linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+  linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 30px 30px; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+
+.professional-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.professional-title h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.skills-year-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.skills-and-year {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-tags {
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  padding: 0.3rem 0.7rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-tag:hover {
+  background-color: #6f42c1;
+}
+
+
+.year {
+  font-size: 2rem;
+  color: #fff;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.description-container {
+  margin-top: 1rem;
+}
+
+.description {
+  line-height: 1.6;
+  max-width: 800px;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
+
+.description::before {
+  content: "✅";
+  margin-right: 0.3rem;
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  li {
+    align-items: start; /* Centers icon and text alignment */
+    gap: 0.3rem; /* Adjusts gap for smaller screens */
+    font-size: 0.9rem; /* Slightly reduces font size for small screens */
+    padding: 0.3rem 0; /* Adjusts spacing between items */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .button-section button {
+    margin: 0 3rem; /* Increased margin for larger screens */
+    max-width: 200px; /* Set a max-width to prevent buttons from stretching too wide */
+  }
+}
+
+@media (max-width: 600px) {
+  .button-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Adds spacing between buttons */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

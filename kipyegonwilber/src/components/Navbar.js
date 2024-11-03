@@ -1,4 +1,3 @@
-// NavigationBar.js
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../styles/styles.css';
@@ -22,12 +21,12 @@ const NavigationBar = () => {
   return (
     <Navbar
       expand="lg"
-      className={`navbar-custom ${navbarBg ? 'navbar-bg-dark fixed-top' : 'navbar-center'}`}
+      className={`navbar-custom ${navbarBg ? 'navbar-bg-dark fixed-top' : 'navbar-center'}`} 
     >
       <Navbar.Brand href="#home" className="text-light"></Navbar.Brand>
       <Nav className="ml-auto flex-row text-center">
-        <Nav.Link href="#about" className="text-light">About</Nav.Link>
-        <Nav.Link href="#skills" className="text-light">Skills</Nav.Link>
+      <Nav.Link href="#about" className="text-light">About</Nav.Link>
+      <Nav.Link href="#skills" className="text-light">Skills</Nav.Link>
         <Nav.Link href="#projects" className="text-light">Projects</Nav.Link>
         <Nav.Link href="#testimonials" className="text-light">Testimonials</Nav.Link>
         <Nav.Link href="#contact" className="text-light">Contact</Nav.Link>
