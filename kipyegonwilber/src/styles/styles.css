@@ -325,3 +325,62 @@ html, body {
     gap: 0.5rem;
   }
 }
+
+
+#skills {
+  padding: 40px;
+  text-align: center;
+  background-color: #000;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#skills p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #222;
+  padding: 20px;
+  /* text-align: center; */
+  border-radius: 8px;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #bbb;
+  margin: 0;
+}

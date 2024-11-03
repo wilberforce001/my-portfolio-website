@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './components/Navbar';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
+import SkillsPage from './components/Skills';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <NavigationBar />
         <HomePage />
         <AboutPage />
+        <SkillsPage />
     </Router>
   );
 }
