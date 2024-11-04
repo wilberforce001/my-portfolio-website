@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import SkillsPage from './components/Skills';
 import ProjectsPage from './components/Projects';
+import TestimonialsPage from './components/Testimonials';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <AboutPage />
         <SkillsPage />
         <ProjectsPage /> 
+        <TestimonialsPage />
     </Router>
   );
 }
