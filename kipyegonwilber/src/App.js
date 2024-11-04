@@ -4,6 +4,7 @@ import NavigationBar from './components/Navbar';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import SkillsPage from './components/Skills';
+import ProjectsPage from './components/Projects';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <HomePage />
         <AboutPage />
         <SkillsPage />
+        <ProjectsPage /> 
     </Router>
   );
 }
