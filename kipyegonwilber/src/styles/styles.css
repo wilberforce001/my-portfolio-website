@@ -2,73 +2,88 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+body {
   box-sizing: border-box;
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
 
+
+/* Initially, the navbar is visible */
 .navbar-custom {
-  transition: background-color 0.3s ease, top 0.3s ease;
-  overflow: hidden;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.85);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: #2b2828 !important;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 10px 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Center the navbar in the viewport initially */
-.navbar-center {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.3rem 2rem;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: rgb(44, 41, 41); /* Slightly transparent background */
-  width: auto;
+.navbar-visible {
+  transform: translateY(0);
 }
 
-.navbar-bg-dark {
-  position: fixed !important;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.hover-area {
+  position: fixed;
+  z-index: 999;
   top: 0;
-  width: 100%; /* Full width at the top */
-  padding: 0.5rem 1rem;
-  border-radius: 0; /* Remove rounded corners when fixed at the top */
-  transition: background-color 0.3s ease-in-out;
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+  height: 20px;
 }
 
-.navbar-custom .nav-link {
-  color: #ffffff !important;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-  margin-right: 1.5rem;
+.hover-area:hover + .navbar-custom, 
+.navbar-custom:hover {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.navbar-custom .nav-link {
-  color: #ffffff !important;
+.navbar-nav {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.navbar-custom .nav-link:hover {
-  color: #ddd !important;
+.nav-link {
+  color: #fff !important;
+  flex: 1;
+  text-align: center;
 }
 
-.navbar-custom .navbar-brand {
-  font-weight: bold;
-  color: #ffffff !important;
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 5px 10px;
+  }
 }
 
 .home {
   position: relative;
-  background-color: #000; /* Base color */
-  overflow: hidden; /* Ensures the overlay doesn't cause unintended scrollbars */
+  overflow: hidden; 
+  padding: 100px 20px;
 }
 
 .home::before {
@@ -98,7 +113,8 @@ html, body {
 }
 
 .container {
-  margin-top: 80px;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
 
 .button-container {
@@ -130,7 +146,7 @@ html, body {
 
 .about-section h2 {
   font-size: 2.5rem;
-  margin-bottom:0.5rem;
+  /* margin-bottom:0.5rem; */
   color: #ffffff;
 }
 
@@ -160,7 +176,7 @@ html, body {
   background-image: 
   linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
   linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 30px 30px; /* Size of the squares */
+  background-size: 15px 15px; /* Size of the squares */
 }
 
 .card h4 {
@@ -338,7 +354,7 @@ html, body {
 
 #skills h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: #bbb;
   margin-bottom: 20px;
 }
 
@@ -452,7 +468,7 @@ html, body {
 }
 
 #projects h2 {
-  color: #fff;
+  color: #bbb;
 }
 .project-link {
   display: inline-block;
@@ -480,7 +496,7 @@ html, body {
 .testimonials-section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: #bbb;
 }
 
 .comments {
@@ -533,5 +549,36 @@ html, body {
 .testimonial-text {
   font-size: 1rem;
   color: #d6bfeb;
+}
+
+/* Contact section styling */
+.contact-section {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: #000;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #bbb;
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 40px; /* Adjust as needed */
+  height: 40px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.icon:hover .social-icon {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  opacity: 0.8; /* Slight transparency effect */
 }
 

@@ -6,6 +6,7 @@ import AboutPage from './components/AboutPage';
 import SkillsPage from './components/Skills';
 import ProjectsPage from './components/Projects';
 import TestimonialsPage from './components/Testimonials';
+import ContactPage from './components/Contact';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <SkillsPage />
         <ProjectsPage /> 
         <TestimonialsPage />
+        <ContactPage />
     </Router>
   );
 }
