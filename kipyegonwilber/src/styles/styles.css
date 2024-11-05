@@ -5,6 +5,8 @@ html {
 body {
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  margin: 20px;
 }
 
 html, body {
@@ -13,6 +15,17 @@ html, body {
   background-color: #000;
   /* font-family: 'Times New Roman', Times, serif; */
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.journey-text {
+  text-align: center;
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+  color: #5d6175; 
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -202,7 +215,8 @@ html, body {
 .button-section {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  align-items: center;
+  flex-direction: row;
   margin: 2rem auto;
   gap: 1rem;
   background-color: rgb(41, 38, 38);
@@ -217,8 +231,19 @@ html, body {
   font-size: 1rem;
   border-radius: 5px;
   color: #fff;
+  max-width: 120px;
 }
 
+/* Remove flex direction change for small screens */
+@media (max-width: 600px) {
+  .button-section {
+    flex-wrap: nowrap;
+  }
+
+  .button-section button {
+    max-width: 45%;
+  }
+}
 
 .professional-journey {
   /* background-image: 
@@ -241,8 +266,9 @@ html, body {
 }
 
 .professional-title h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
+  color: #7e2828;
 }
 
 .skills-year-container {
@@ -259,19 +285,19 @@ html, body {
 }
 
 .skill-tags {
-  margin-top: 2rem;
+  /* margin-top: 2rem;  */
   flex-wrap: wrap;
   display: flex;
   gap: 0.5rem;
 }
 
 .skill-tag {
-  padding: 0.3rem 0.7rem;
-  background-color: #333;
-  color: #fff;
+  /* padding: 0.3rem 0.7rem; */
+  /* background-color: #333; */
+  color: #bbb;
   border-radius: 15px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  /* font-size: 0.9rem; */
+  /* font-weight: 500; */
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -282,8 +308,8 @@ html, body {
 
 
 .year {
-  font-size: 2rem;
-  color: #fff;
+  /* font-size: 2rem; */
+  color: #bbb;
   white-space: nowrap;
   margin-left: 1rem;
 }
@@ -488,9 +514,13 @@ html, body {
 }
 
 .testimonials-section {
-  background-color: #000;
+  background-image: 
+  linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+  linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 50px 50px;
   padding: 4rem 2rem;
   text-align: center;
+  margin: 0;
 }
 
 .testimonials-section h2 {
@@ -581,4 +611,3 @@ html, body {
   transform: scale(1.1); /* Slightly enlarge on hover */
   opacity: 0.8; /* Slight transparency effect */
 }
-
