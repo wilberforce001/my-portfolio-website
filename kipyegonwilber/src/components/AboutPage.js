@@ -100,7 +100,7 @@ const AboutPage = () => {
               </div>
               <div class="card col-lg-4 col-md-6 col-sm-12">
                 <h4>Data-Driven Decision-Making Solutions</h4>
-                <p>I Leverage my analytical skills to build data-driven applications that analyze complex datasets, generating actionable insights and facilitating informed decision-making for users.</p>
+                <p>I leverage my analytical skills to build data-driven applications that analyze complex datasets, generating actionable insights and facilitating informed decision-making for users.</p>
               </div>
               <div class="card col-lg-4 col-md-6 col-sm-12">
                 <h4>User-Centered Interface Design</h4>

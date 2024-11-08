@@ -210,33 +210,31 @@ html, body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin: 2rem auto;
   gap: 1rem;
   background-color: rgb(41, 38, 38);
-  padding: 1rem 0;
+  padding: 1rem;
   border-radius: 10px;
+  max-width: 1350px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .button-section {
+    max-width: 100%;
+  }
 }
 
 .button-section button {
-  /* flex: none; */
-  /* margin: 0 5rem; */
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 5px;
   color: #fff;
   max-width: 120px;
 }
 
-/* Remove flex direction change for small screens */
-@media (max-width: 600px) {
-  .button-section {
-    flex-wrap: nowrap;
-  }
-
-  .button-section button {
-    max-width: 45%;
-  }
-}
 
 .professional-journey {
   /* background-image: 
