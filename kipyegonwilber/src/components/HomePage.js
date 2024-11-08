@@ -14,7 +14,7 @@ const HomePage = () => {
                     Seamless User Experiences
                 </p>
                 <p className="fs-5 text-secondary mb-5">
-                    Hi! 👋🏾 I'm Wilberforce, a Fullstack Developer
+                    Hi!👋🏾 I'm Wilberforce, a Fullstack Developer
                     blending tech with a touch of Actuarial precision <br />
                     to create sleek, user-focused web experiences.
                 </p>

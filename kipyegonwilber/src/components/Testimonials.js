@@ -13,11 +13,6 @@ const TestimonialsPage = () => {
             <p class="client-role">Software Developer/Actuarial Scientist</p>
             <p class="testimonial-text">I am yet to update this section in not so long!</p>
             </div>
-            {/* <div class="testimonial-card">
-            <h3 class="client-name">Client 2</h3>
-            <p class="client-role">Marketing Manager, Company 2</p>
-            <p class="testimonial-text">"Professional, reliable, and incredibly helpful. Highly recommend!"</p>
-            </div> */}
         </div>
         </section>
     );
