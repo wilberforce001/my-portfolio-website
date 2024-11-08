@@ -6,20 +6,17 @@ body {
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.6;
-  /* margin: 20px; */
 }
 
 html, body {
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0;
+  padding: 0;
   background-color: #000;
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .journey-text {
   text-align: center;
-  font-size: 1.1rem; 
+  font-size: 1rem; 
   line-height: 1.6; 
   color: #5d6175; 
   margin-bottom: 20px; 
@@ -29,8 +26,6 @@ html, body {
   margin-right: auto;
 }
 
-
-/* Initially, the navbar is visible */
 .navbar-custom {
   background-color: #0f2246 !important;
   width: 100%; 
@@ -45,6 +40,7 @@ html, body {
   right: 0;
   z-index: 1000;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 0px 5px;
 }
 
 .navbar-visible {
@@ -55,18 +51,14 @@ html, body {
   transform: translateY(-100%);
 }
 
-.nav-link {
-  color: #fff !important;
-}
-
-.hover-area {
+/* .hover-area {
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   right: 0;
   height: 20px;
-}
+} */
 
 .hover-area:hover + .navbar-custom, 
 .navbar-custom:hover {
@@ -81,10 +73,11 @@ html, body {
   width: 100%;
 }
 
-.nav-link {
-  color: #fff !important;
-  flex: 1;
-  text-align: center;
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  font-size: 0.9rem;
+  padding: 5px 5px;
+  color: #ffcc00 !important;
 }
 
 
