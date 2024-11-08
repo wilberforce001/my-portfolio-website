@@ -21,8 +21,8 @@ const HomePage = () => {
 
                 <div className="button-container d-flex justify-content-center align-items-center">
                 <Button 
-                as="a" // Use a regular anchor tag
-                href="#projects" // Point to the section's ID
+                as="a" 
+                href="#projects" 
                 variant="purple" 
                 className="btn-purple rotating-border d-flex align-items-center"
             >

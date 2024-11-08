@@ -87,28 +87,28 @@ const AboutPage = () => {
       );
     return (
         <section id="about" class="about-section">
-            <h2>ABOUT ME</h2>
+            <h2 className="text-secondary mt-3">ABOUT ME</h2>
             <h3>Bridging the Gap Between Users and Technology</h3>
             <div class="about-cards">
-                <div class="card">
-                <h4>I Design Solutions, Not Just Interfaces</h4>
-                <p>I help businesses overcome the challenge of poor user experiences by creating responsive, intuitive, and user-centered web applications.</p>
-                </div>
-                <div class="card">
-                <h4>Turning Complex into Simple</h4>
-                <p>Through clean design and functional user journeys, I bridge the gap between users and technology, making digital products easy to navigate and impactful.</p>
-                </div>
-                <div class="card">
-                <h4>Frontend Expertise for Better Engagement</h4>
-                <p>With expertise in React, Tailwind CSS, and JavaScript, I craft responsive, high-performance web applications that engage users and enhance overall experiences.</p>
-                </div>
-                <div class="card">
-                <h4>Human-Centered Design</h4>
-                <p>Every project I undertake is guided by one goal: creating solutions that empower users and drive business growth.</p>
-                </div>
+              <div class="card col-lg-4 col-md-6 col-sm-12">
+                <h4>I Build Scalable Web Applications</h4>
+                <p>I have expertise in designing and developing scalable web applications that seamlessly handle user interactions, integrate with databases, and provide efficient data processing.</p>
+              </div>
+              <div class="card col-lg-4 col-md-6 col-sm-12">
+                <h4>API Development and Integration</h4>
+                <p>I am proficient in developing RESTful APIs to enable smooth communication between front-end and back-end systems, ensuring seamless integration with third-party services and data sources.</p>
+              </div>
+              <div class="card col-lg-4 col-md-6 col-sm-12">
+                <h4>Data-Driven Decision-Making Solutions</h4>
+                <p>I Leverage my analytical skills to build data-driven applications that analyze complex datasets, generating actionable insights and facilitating informed decision-making for users.</p>
+              </div>
+              <div class="card col-lg-4 col-md-6 col-sm-12">
+                <h4>User-Centered Interface Design</h4>
+                <p>I Specialize in creating intuitive, responsive user interfaces that prioritize user experience, ensuring accessibility and ease of use while delivering powerful functionality.</p>
+              </div>
             </div>
 
-            <div className="about-section">
+            <div>
                 <div className="button-section">
                     <button onClick={() => setActiveTab('education')} className="btn btn-primary">Education</button>
                     <button onClick={() => setActiveTab('experience')} className="btn btn-secondary">Experience</button>
