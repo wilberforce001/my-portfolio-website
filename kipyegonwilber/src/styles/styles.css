@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.6;
   /* margin: 20px; */
