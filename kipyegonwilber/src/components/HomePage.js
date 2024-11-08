@@ -6,10 +6,12 @@ const HomePage = () => {
     return (
         <section className="home d-flex flex-column justify-content-center align-items-center text-center vh-100">
             <div className="container">
-                <h1 className="fs-8 lead text-secondary mb-5">
+                <h1 className="">
+                {/* fs-8 lead text-secondary mb-5 */}
                 DEDICATED TO CRAFTING ENGAGING AND FUNCTIONAL USER INTERFACES
                 </h1>
-                <p className="fs-24 display-4 fw-bold text-white mb-5">
+                <p>
+                {/* fs- 24 display-4 fw-bold text-red mb-5 */}
                     Transforming Concepts into <br />
                     Seamless User Experiences
                 </p>
