@@ -13,44 +13,36 @@ const AboutPage = () => {
              I developed a deep understanding of mathematical principles, statistics, and risk assessment. 
              This academic background has not only honed my problem-solving abilities but also sparked my interest in software engineering, 
             leading me to pursue further learning and practical experience in this dynamic field.</p>
-            <ul className="professional-journey">
+            <ul className="educational-journey">
             <li>
-              <div className="professional-title">
+            <div className="education-container">
+              <div className="left-content">
                 <h2>Kenyatta University</h2>
+                <span className="degree text-secondary">B.Sc. (Actuarial Science)</span>
               </div>
-              <div className="skills-year-container">
-                <div className="skill-tags">
-                  <span className="skill-tag">B.Sc. (Actuarial Science)</span>
-                </div>
-                <span className="year">July, 2021</span>
-              </div>
-              <div className="professional-title">
+              <span className="year text-secondary">July, 2021</span>
+            </div>
+            <div className="education-container">
+              <div className="left-content">
                 <h2>European Business University of Luxembourg</h2>
+                <span className="degree text-secondary">Certificate in Mobile Application Development</span>
               </div>
-              <div className="skills-year-container">
-                <div className="skill-tags">
-                  <span className="skill-tag">Certificate in Mobile Application Development</span>
-                </div>
-                <span className="year">Sep. 2022 - May 2023</span>
-              </div>
-              <div className="professional-title">
+              <span className="year text-secondary">May, 2023</span>
+            </div>
+            <div className="education-container">
+              <div className="left-content">
                 <h2>European Business University of Luxembourg</h2>
+                <span className="degree text-secondary">Certificate in Introduction to Python</span>
               </div>
-              <div className="skills-year-container">
-                <div className="skill-tags">
-                  <span className="skill-tag">Certificate in Introduction to Python </span>
-                </div>
-                <span className="year">Jult 2022 - Oct. 2022</span>
-              </div>
-              <div className="professional-title">
+              <span className="year text-secondary">October, 2022</span>
+            </div>
+            <div className="education-container">
+              <div className="left-content">
                 <h2>European Business University of Luxembourg</h2>
+                <span className="degree text-secondary">Certificate in Financial Accounting</span>
               </div>
-              <div className="skills-year-container">
-                <div className="skill-tags">
-                  <span className="skill-tag">Certificate in Financial Accounting</span>
-                </div>
-                <span className="year">March 2022 - June 2022</span>
-              </div>
+              <span className="year text-secondary">June, 2022</span>
+            </div>
             </li>
           </ul>
         </div>
@@ -110,7 +102,7 @@ const AboutPage = () => {
 
             <div>
                 <div className="button-section">
-                    <button onClick={() => setActiveTab('education')} className="btn btn-primary">Education</button>
+                    <button onClick={() => setActiveTab('education')} className="btn btn-secondary">Education</button>
                     <button onClick={() => setActiveTab('experience')} className="btn btn-secondary">Experience</button>
                 </div>
                 <div>

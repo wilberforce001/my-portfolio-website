@@ -238,75 +238,62 @@ html, body {
   margin-right: auto;
 }
 
-
-.professional-journey {
-  /* background-image: 
-  linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-  linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 30px 30px; */
-  list-style-type: none;
+.educational-journey {
+  list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  margin-bottom: 2em;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  flex-grow: 1;
 }
 
-
-.professional-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.professional-title h2 {
-  font-size: 1.5rem;
+.left-content h2 {
   margin: 0;
-  color: #7e2828;
+  font-size: 1.5rem
 }
 
-.skills-year-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.5rem;
+.degree {
+  font-style: italic;
+  display: block;
+  margin-top: 0.2em;
+  color: #fff;
+  font-size: 1.1rem
 }
-
-.skills-and-year {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.skill-tags {
-  /* margin-top: 2rem;  */
-  flex-wrap: wrap;
-  display: flex;
-  gap: 0.5rem;
-}
-
-.skill-tag {
-  /* padding: 0.3rem 0.7rem; */
-  /* background-color: #333; */
-  color: #bbb;
-  border-radius: 15px;
-  /* font-size: 0.9rem; */
-  /* font-weight: 500; */
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.skill-tag:hover {
-  background-color: #6f42c1;
-}
-
 
 .year {
-  /* font-size: 2rem; */
-  color: #bbb;
-  white-space: nowrap;
-  margin-left: 1rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 80px;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
+
+@media (max-width: 600px) {
+  .year {
+    align-self: flex-end;
+    margin-top: 0.5em;
+  }
+  .left-content h2,
+  .degree,
+  .year {
+    font-size: 1.2em;
+  }
+}
+
 
 .description-container {
   margin-top: 1rem;
