@@ -323,10 +323,9 @@ html, body {
 
 .description {
   display: flex;
-  flex-direction: row;
   line-height: 1.4;
   max-width: 800px;
-  width: 100%;
+  width: 90%;
   color: #bbb;
   text-align: left;
 } 
