@@ -288,11 +288,13 @@ html, body {
   margin: 0;
 }
 
+
 .prof-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  box-sizing: border-box;
   margin: 0 auto;
   flex-wrap: nowrap;
   margin-bottom: 1em;
@@ -310,13 +312,13 @@ html, body {
   font-size: 1.5rem
 }
 
-
 .description-container {
   display: flex;
   flex-direction: column;
   width: 90%;
+  box-sizing: border-box;
   margin: 0 auto;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   margin-bottom: 1em;
 }
 
@@ -324,10 +326,10 @@ html, body {
 .description {
   display: flex;
   line-height: 1.4;
-  max-width: 800px;
-  width: 90%;
+  max-width: 100%;
+  width: 80%;
   color: #bbb;
-  text-align: left;
+  text-align: left; 
 } 
 
 .description::before {
@@ -346,6 +348,14 @@ html, body {
   .year {
     font-size: 1.2em;
   } 
+  .prof-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .description-container {
+    width: 100%;
+  }
 }
 
 
