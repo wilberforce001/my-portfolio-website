@@ -25,7 +25,7 @@ const NavigationBar = () => {
   return (
     <Navbar
       expand="lg"
-      className={`navbar-custom ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`}
+      className={`navbar-custom ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`} 
     >
       <Nav className="ml-auto flex-row text-center">
         <Nav.Link href="#about" className="text-light">About</Nav.Link>

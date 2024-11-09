@@ -18,6 +18,7 @@ const ContactPage = () => {
                     <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
                 </a>
             </div>
+            <p className="copyright">Copyright © 2024 Kipyegon Wilberforce Kenduiywo</p>
         </section>
     );
 };

@@ -23,7 +23,7 @@ const SkillsPage = () => {
     return (
         <section id="skills">
             <h2>MY TALENT</h2>
-            <p>PROFESSIONAL SKILLS</p>
+            <p className="skills-heading">PROFESSIONAL SKILLS</p>
             <div className="skills-grid">
                 <div className="skill-card">
                     <img src={htmlIcon} alt="Html" className="skill-icon" />

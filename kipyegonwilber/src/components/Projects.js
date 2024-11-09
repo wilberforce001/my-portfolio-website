@@ -8,7 +8,7 @@ const ProjectsPage = () =>{
     return(
         <section id="projects" className="projects-section">
         <h2>LATEST WORKS</h2>
-        <p>EXPLORE MY CURRENT PROJECTS</p>
+        <p className="projects-heading">EXPLORE MY CURRENT PROJECTS</p>
         <div className="projects-container">
             <div className="project-card">
                 <img src={appointmentIcon} alt="Appointment" className="project-image" />
