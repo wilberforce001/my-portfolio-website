@@ -231,7 +231,7 @@ html, body {
   font-size: 1rem; 
   line-height: 1.5; 
   color: #d3d3d3; 
-  margin-bottom: 20px; 
+  margin-bottom: 3rem; 
   width: 100%;
   max-width: 800px;
   margin-left: auto;
@@ -282,6 +282,61 @@ html, body {
   font-size: 1.1rem;
 }
 
+.professional-journey {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prof-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  margin-bottom: 1em;
+}
+
+.prof-left-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.prof-left-content h2 {
+  margin: 0;
+  font-size: 1.5rem
+}
+
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  margin-bottom: 1em;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.4;
+  max-width: 800px;
+  width: 100%;
+  color: #bbb;
+  text-align: left;
+} 
+
+.description::before {
+  content: "✅";
+  margin-right: 0.3rem;
+}
+
+
 @media (max-width: 600px) {
   .year {
     align-self: flex-end;
@@ -291,25 +346,7 @@ html, body {
   .degree,
   .year {
     font-size: 1.2em;
-  }
-}
-
-
-.description-container {
-  margin-top: 1rem;
-}
-
-.description {
-  line-height: 1.6;
-  max-width: 800px;
-  color: #bbb;
-  margin-bottom: 0.5rem;
-}
-
-
-.description::before {
-  content: "✅";
-  margin-right: 0.3rem;
+  } 
 }
 
 

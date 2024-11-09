@@ -13,7 +13,7 @@ const AboutPage = () => {
              I developed a deep understanding of mathematical principles, statistics, and risk assessment. 
              This academic background has not only honed my problem-solving abilities but also sparked my interest in software engineering, 
             leading me to pursue further learning and practical experience in this dynamic field.</p>
-            <ul className="educational-journey">
+          <ul className="educational-journey">
             <li>
             <div className="education-container">
               <div className="left-content">
@@ -55,18 +55,12 @@ const AboutPage = () => {
           </p>
           <ul className="professional-journey">
             <li>
-              <div className="professional-title">
-                <h2>Software Developer</h2>
-              </div>
-              <div className="skills-year-container">
-                <div className="skill-tags">
-                  <span className="skill-tag">JavaScript</span>
-                  <span className="skill-tag">React</span>
-                  <span className="skill-tag">Vue.js</span>
-                  <span className="skill-tag">Node.js</span>
-                  <span className="skill-tag">Express</span>
+              <div className="prof-container">
+                <div className="prof-left-content">
+                  <h2>Software Developer</h2>
+                  <span className="degree text-secondary">JavaScript|React|Vue.js|Node.js|Express</span>
                 </div>
-                <span className="year">2022</span>
+                <span className="year text-secondary">3 yrs</span>
               </div>
               <div className="description-container">
                 <p className="description">Acquired in-depth knowledge of web development, focusing on building structured and responsive applications using HTML, CSS, and JavaScript. Developed proficiency in server-side programming with Node.js and Express, enabling the creation of scalable RESTful APIs.</p>
