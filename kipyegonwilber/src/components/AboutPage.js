@@ -8,7 +8,7 @@ const AboutPage = () => {
     const educationContent = (
         <div className="educationContent">
           <h2>My Education Journey</h2>
-          <p className="journey-text">My educational journey has been rooted in a strong foundation in Actuarial Science, 
+          <p className="journey-text text-secondary">My educational journey has been rooted in a strong foundation in Actuarial Science, 
             which has equipped me with analytical and quantitative skills. Throughout my studies,
              I developed a deep understanding of mathematical principles, statistics, and risk assessment. 
              This academic background has not only honed my problem-solving abilities but also sparked my interest in software engineering, 
@@ -58,7 +58,7 @@ const AboutPage = () => {
       const experienceContent = (
         <div className="prof-journey">
           <h2>My Professional Journey</h2>
-          <p className="journey-text">
+          <p className="journey-text text-secondary">
           Over the past two years, I have transitioned into software engineering, leveraging my analytical background in Actuarial Science. My journey has been characterized by self-directed learning and hands-on experience through an intensive two-week bootcamp, where I enhanced my skills in front-end and back-end development. Although I haven't yet worked in an organization, I've built a portfolio that showcases my ability to create functional UIs, manage authentication, and implement CRUD functionality. I am eager to find opportunities that align with my values and allow me to grow as a software engineer.
           </p>
           <ul className="professional-journey">
