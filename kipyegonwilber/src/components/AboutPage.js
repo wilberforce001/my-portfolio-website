@@ -51,7 +51,12 @@ const AboutPage = () => {
         <div className="prof-journey">
           <h2>My Professional Journey</h2>
           <p className="journey-text text-secondary">
-          Over the past two years, I have transitioned into software engineering, leveraging my analytical background in Actuarial Science. My journey has been characterized by self-directed learning and hands-on experience through an intensive two-week bootcamp, where I enhanced my skills in front-end and back-end development. Although I haven't yet worked in an organization, I've built a portfolio that showcases my ability to create functional UIs, manage authentication, and implement CRUD functionality. I am eager to find opportunities that align with my values and allow me to grow as a software engineer.
+          Over the past four years, I have transitioned into software engineering, leveraging my analytical background in Actuarial Science.
+          My journey has been characterized by self-directed learning and hands-on experience through bootcamps, 
+          where I enhanced my skills in front-end and back-end development. Although I haven't yet worked in an organization, 
+          I've built a portfolio that showcases my ability to create functional UIs, manage authentication, and implement CRUD functionality. 
+          This portfolio also showcases the diferent projects that I have worked on in my software engineering journey which demonstrate my skills and experience in this field. 
+          I am eager to find opportunities that align with my values and allow me to grow as a software engineer.
           </p>
           <ul className="professional-journey">
             <li>
