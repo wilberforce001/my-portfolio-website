@@ -65,7 +65,7 @@ const AboutPage = () => {
                   <h2>Software Developer</h2>
                   <span className="degree text-secondary">JavaScript|React|Vue.js|Node.js|Express</span>
                 </div>
-                <span className="year text-secondary">3 yrs</span>
+                <span className="year text-secondary">4 yrs</span>
               </div>
               <div className="description-container">
                 <p className="description">Acquired in-depth knowledge of web development, focusing on building structured and responsive applications using HTML, CSS, and JavaScript. Developed proficiency in server-side programming with Node.js and Express, enabling the creation of scalable RESTful APIs.</p>
