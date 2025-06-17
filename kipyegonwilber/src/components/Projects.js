@@ -17,20 +17,20 @@ const ProjectsPage = () =>{
                 <a href="https://appointment-management-system-2.onrender.com/" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
             <div className="project-card">
+                <img src={healthcareIcon} alt="Library" className="project-image" />
+                <h3 className="project-title">Healthcare Dashboard</h3>
+                <p className="project-description">A comprehensive healthcare dashboard designed for managing patient data and healthcare metrics. 
+                    It provides an intuitive interface with data visualizations, patient records, appointment scheduling, and health metrics tracking. 
+                    Built with a focus on usability, the dashboard streamlines healthcare data management for better insights and decision-making.</p>
+                <a href="https://patient-dashboard-r6y9.onrender.com/" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a> 
+            </div>
+            <div className="project-card">
                 <img src={adminDashboardIcon} alt="Dashboard" className="project-image" />
                 <h3 className="project-title">Admin Dashboard</h3>
                 <p className="project-description">A responsive admin dashboard with a clean, user-friendly interface. 
                     Features a sidebar for easy navigation, a search bar, and sections for projects, announcements, 
                     and trending items. Built using HTML, CSS Grid, and Tailwind for a modern, structured layout.</p>
                 <a href="https://wilberforce001.github.io/Project-Library/" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div className="project-card">
-                <img src={healthcareIcon} alt="Library" className="project-image" />
-                <h3 className="project-title">Healthcare Dashboard</h3>
-                <p className="project-description">A comprehensive healthcare dashboard designed for managing patient data and healthcare metrics. 
-                    It provides an intuitive interface with data visualizations, patient records, appointment scheduling, and health metrics tracking. 
-                    Built with a focus on usability, the dashboard streamlines healthcare data management for better insights and decision-making.</p>
-                <a href="https://xd.adobe.com/view/121254c9-532f-4772-a1ba-dfe529a96b39-4741/" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a> 
             </div>
             <div className="project-card">
                 <img src={LibraryIcon} alt="Library" className="project-image" />
