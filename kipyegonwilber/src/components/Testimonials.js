@@ -10,7 +10,7 @@ const TestimonialsPage = () => {
             <div class="testimonial-card">
             <img src={wilberPhoto} alt="Appointment" className="client-photo" />
             <h3 class="client-name">Kipyegon K. Wilberforce</h3>
-            <p class="client-role">Software Developer|Actuarial Scientist</p>
+            <p class="client-role">Software Developer | Actuarial Scientist</p>
             {/* <p class="testimonial-text">I am yet to update this section in not so long!</p> */}
             </div>
         </div>
