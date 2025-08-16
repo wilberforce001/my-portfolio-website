@@ -1,5 +1,5 @@
 import React from "react";
-import wilberPhoto from '../assets/wilber.png';
+import wilberPhoto from '../assets/Profile-Pic.png';
 
 const TestimonialsPage = () => {
     return (
